@@ -740,6 +740,7 @@ body{
             max-width: 450px;
             height: auto;
             border-radius: 5px;
+            
         }
 
         .container__2 {
@@ -768,6 +769,8 @@ body{
             color: black;
             border-radius: 30px;
             padding: 5px 15px;
+
+
         }
 
         .box__2 {
@@ -777,7 +780,9 @@ body{
 
         .box__2:hover {
             background-color: darkgray;
-        }
+    }
+
+
 
         .card {
             margin: 5% auto;
@@ -935,62 +940,28 @@ body{
             border: none;
             cursor: pointer;
         }
-
-        .footer {
-            background-color: lightgrey;
-            padding: 20px 5%;
-            max-width: 1200px;
-            margin: 0 auto;
+       
+     .footer {
+            padding: 2rem;
+            background-color: #eee;
         }
 
         .footer__1 {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
             justify-content: space-between;
         }
 
-        .footer__1 div {
-            flex: 1;
-            min-width: 150px;
+        .footer__1 > div {
+            margin: 1rem 0;
+            min-width: 200px;
         }
 
-        .footer__1 p:hover {
-            border-bottom: 1px solid black;
-            color: darkgray;
-        }
-
-        .footer__2 {
-            margin-top: 20px;
-        }
-
-        .footer__3 {
+        .footer__3, .footer__5 {
+            padding: 1rem;
+            background-color: #ddd;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-
-        .footer__3__1 {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .footer__3__1 p:hover {
-            border-bottom: 1px solid black;
-            background-color: lightgray;
-        }
-
-        .footer__3__one {
-            display: flex;
-            gap: 10px;
-        }
-
-        .footer__5 {
-            background-color: lightgray;
-            padding: 20px 5%;
-            display: flex;
             justify-content: space-between;
             align-items: center;
         }
@@ -998,19 +969,25 @@ body{
         .footer__5__m {
             display: flex;
             align-items: center;
-            gap: 10px;
         }
 
         .footer__5__m img {
-            width: 30px;
             height: 30px;
-            border-radius: 50%;
+            margin-right: 0.5rem;
         }
 
         .footer__5__one a {
-            margin: 0 10px;
-            font-size: 1.2rem;
+            margin: 0 0.5rem;
+            color: #000;
         }
+
+
+  
+
+       
+       
+        
+
 
         @media screen and (max-width: 600px) {
             .navbar {
@@ -1098,14 +1075,10 @@ body{
                 right: 10px;
             }
 
-            .footer__1, .footer__3 {
+         
+              .footer__3__1, .footer__3__one, .footer__5 {
                 flex-direction: column;
-                align-items: center;
-            }
-
-            .footer__5 {
-                flex-direction: column;
-                gap: 10px;
+                align-items: flex-start;
             }
         }
-    </style>
+    
